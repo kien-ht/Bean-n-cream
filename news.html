@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="dropdown">
+                <a class="dropbtn"><img src="./image/dropdown-menu-icon-288757-free-icons-library-dropdown-list-png-512_512.png" alt="" width="30px" height="auto" id="dropdownimg" onclick="myFunction()">
+                </a> 
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="#">Tin tức</a><hr>
+                  <a href="#">Thực đơn</a><hr>
+                  <a href="#">Về chúng tôi</a>
+                  </div>
+            </div>
+            <li><a href="" class="coffee-name">Beans n Cream</a></li>
+            <div class="list">
+            
+            <!-- <a href="" class="logo"><img  src="/image/98538963-cup-of-hot-coffee-icon-white-icon-on-black-background-inversion.jpg" alt="" width="40px" height="auto"></a> -->
+            <ul>
+                <li><a href="" class="underline-from-left">Về chúng tôi</a></li>
+                <li><a href="./index.html" class="animate-a">Thực đơn</a></li>
+                <li><a href="./news.html" class="animate-a">Tin tức</a></li>
+                <li><a href="" class="animate-a">Cửa hàng</a></li>
+            </ul>
+            <!-- <input type="image" id="myBtn" src="./image/shopping-cart-logo-icon-shopping-cart.png" alt="" > -->
+        </div>
+        </div>
+    </header>
+    <!-- <button id="myBtn"></button> -->
+    <!-- <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="user-input">
+                <span class="close span1">&times;</span>
+            <h3>Thông tin người nhận</h3>
+            <hr>
+            <div>
+                
+                <input type="text" class="checkout-name" placeholder="Tên người nhận">
+                <input type="text" class="checkout-number" placeholder="Số điện thoại">
+            </div>
+   
+            <input type="text" class="checkout-address" placeholder="Địa chỉ giao hàng">
+            <input type="text" class="checkout-note" placeholder="Ghi chú">
+        </div>
+        <div class="shopping-cart">
+            <span class="close span2">&times;</span>
+            <h3>Giỏ hàng</h3>
+            <hr>
+            <div class="item-cart">
+            <div class="item-name">Item1<span id="item-price">30.000đ</span></div>
+            <div class="item-name">Item2<span id="item-price">30.000đ</span></div>
+            </div>
+            <hr>
+            <div class="price-total">   
+                <div id="price">Tổng cộng</div>
+                <div id="price-number">60.000đ</div>
+            </div>
+            <div class="shipping">
+                <div id="shipping-name">Phí vận chuyển</div>
+                <div id="shipping-price">15.000đ</div>
+            </div>
+            <hr>
+            <div class="checkout-btn">
+            <div class="promo">
+                <input id="promo" class="button" type="text" placeholder="Nhập mã ưu đãi">
+                <button id="apply" class="button ">Áp dụng</button>
+            </div>
+            
+            <div class="checkout">
+                <button id="checkout-button" class="button">Thanh toán</button>
+            </div>
+        </div>
+        </div>
+        <div class="paying">
+            <div> <h3 id="payment-name"> Phương thức thanh toán</h3> </div>
+            <hr>
+            
+            <div class="payment">
+                <div class="payment-name1">
+                <div>
+                    <label class="cursor">
+                        <input type="radio" name="payment" id="cash-pay">
+                        <img src="/image/cash.png" alt="" width="20px" height="auto">
+                        <span id="cash">Tiền mặt</span>
+                    </label>
+                </div>
+                <div>
+                    
+                    <label class="cursor">
+                        <input type="radio" name="payment" id="atm-pay">
+                        <img src="/image/atm.png" alt="" width="20px" height="auto">
+                        <span id="bank">ATM</span>
+                    </label>
+                </div>
+                <div>
+                    <label class="cursor">
+                        <input type="radio" name="payment" id="visa-pay">
+                        <img src="/image/visa-logo-preview.png" alt="" width="20px" height="auto">
+                        <span id="visa">Visa</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="payment-name2">
+                <div>
+                    <label class="cursor">
+                        <input type="radio" name="payment" id="airpay-pay">
+                        <img src="/image/airpay.png" alt="" width="20px" height="20px">
+                        <span id="airpay">AirPay</span>
+                    </label>
+                </div>
+                <div>
+                    <label class="cursor">
+                        <input type="radio" name="payment" id="momo-pay">
+                        <img src="/image/logo-momo.png" alt="" width="20px" height="20px">
+                        <span id="momo">Ví Momo</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div> -->
+
+    <!-- <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="/image/img1.webp" style="width:100%">
+        </div>
+     
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="/image/img2.webp" style="width:100%">
+        </div>
+     
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="/image/img3.webp" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div> -->
+
+
+        </section>
+        <div class="top">Tin tức</div>
+    <h2 id="blog">Blog</h2>
+    <div class="line4"></div>
+    <section class="all">
+        <section class="header-extra">
+            <section class="bai1">
+                <a href=""><img src="./image/header.jpg" width="830px" height="350px" alt=""></a>
+                <section class="text">
+                    <h5 class="tin">TIN TỨC</h5>
+                    <a href="http://" target="_blank" style="text-decoration: none;">
+                        <h3 class="name h3-color">Trải nghiệm tính năng Pick Up - Chủ động đến lấy và không chờ đợi</h3></a>
+                    <div class="time">1 ngày trước</div>
+                    <div class="mota">Bạn đã sẵn sàng trải nghiệm tính năng PICK UP mới nhất tại website của cửa hàng chúng tôi?
+                        Từ ngày 09/06, bạn đã có thể đặt món tiện lợi hơn, chủ động...</div>
+                    <div class="button hvr-sweep-to-right">Xem thêm</div>
+                </section>
+            </section>
+            <section class="bai23">
+                <section class="news2">
+                    <a href=""><img src="./image/Bai2.jpg" width="400px" height="150px" alt=""></a>
+                    <section class="text">
+                        <h5 class="tin">TIN TỨC</h5>
+                        <a href="http://" target="_blank" style="text-decoration: none;">
+                            <h3 class="name h3-color">GÓI TIẾT KIỆM DÀNH CHO NGƯỜI THÍCH CÀ PHÊ - TIẾT KIỆM ĐẾN 140K</h3></a>
+                        <div class="time">5 giờ trước</div>
+                        <div class="mota">Nhà hiểu rằng, với những ai trót yêu cà phê thì mọi việc sẽ bớt quan trọng khi 
+                            chưa có ly cà phê quen thuộc đầu ngày. Vì vậy, gói...</div>
+                        <div class="button hvr-sweep-to-right">Xem thêm</div>
+                    </section>
+                </section>
+                <section class="news3">
+                    <a href=""><img src="./image/Bai3.jpg" width="400px" height="150px" alt=""></a>
+                    <section class="text">
+                        <h5 class="tin">TIN TỨC</h5>
+                        <a href="http://" target="_blank" style="text-decoration: none;">
+                            <h3 class="name h3-color">Chương trình khuyến mãi mua 1 tặng 1 khi đặt hàng tại website</h3></a>
+                        <div class="time">1 ngày trước</div>
+                        <div class="mota">“Tín đồ” trà sữa có thể tranh thủ nhận voucher mua 1 tặng 1 khi đặt hàng tại website để thỏa sức “nạp” trà sữa mỗi khi bạn...</div>
+                        <div class="button hvr-sweep-to-right">Xem thêm</div>
+                    </section>
+                </section>
+            </section>
+            <section class="bai45">
+                <section class="news4">
+                    <a href=""><img src="./image/bai4.jpg" width="400px" height="150px" alt=""></a>
+                    <section class="text">
+                        <h5 class="tin">TIN TỨC</h5>
+                        <a href="http://" target="_blank" style="text-decoration: none;">
+                            <h3 class="name h3-color">Thử nghiệm vị trà sữa mới taste the love ngay, nhận ngay voucher giảm giá</h3></a>
+                        <div class="time">2 ngày trước</div>
+                        <div class="mota">Trà sữa vị nào ngon nhất? Một câu hỏi không dễ trả lời. Liệu bạn đã biết hết tên các loại trà sữa ngon và đoán đúng...</div>
+                        <div class="button hvr-sweep-to-right">Xem thêm</div>
+                    </section>
+                </section>
+                <section class="news5">
+                    <a href=""><img src="./image/bai5.jpg" width="400px" height="150px" alt=""></a>
+                    <section class="text">
+                        <h5 class="tin">TIN TỨC</h5>
+                        <a href="http://" target="_blank" style="text-decoration: none;">
+                            <h3 class="name h3-color">5 loại trà sữa hót nhất hè 2020 dành cho những tín đồ mê trà sữa</h3></a>
+                        <div class="time">3 ngày trước</div>
+                        <div class="mota">Bạn có tự tin mình là 1 fan cứng của trà sữa? Liệu bạn biết về tất cả các cách pha trà sữa và các hương vị trà sữa...</div>
+                        <div class="button hvr-sweep-to-right">Xem thêm</div>
+                    </section>
+                </section>
+            </section>
+            <section class="bai67">
+                <section class="news6">
+                    <a href=""><img src="./image/bai6.jpg" width="400px" height="150px" alt=""></a>
+                    <section class="text">
+                        <h5 class="tin">TIN TỨC</h5>
+                        <a href="http://" target="_blank" style="text-decoration: none;">
+                            <h3 class="name h3-color">Hưỡng dẫn cách pha trà sữa xoài ngay tại nhà</h3></a>
+                        <div class="time">4 ngày trước</div>
+                        <div class="mota">Có một cách đơn giản mà bạn có thể vừa thỏa mãn sở thích, vừa yên tâm về chất lượng trà sữa đó là tự tay làm tại nhà,...</div>
+                        <div class="button hvr-sweep-to-right">Xem thêm</div>
+                    </section>
+                </section>
+                <section class="news7">
+                    <a href=""><img src="./image/bai7.jpg" width="400px" height="150px" alt=""></a>
+                    <section class="text">
+                        <h5 class="tin">TIN TỨC</h5>
+                        <a href="http://" target="_blank" style="text-decoration: none;">
+                            <h3 class="name h3-color">Hot rần rần Trà Sữa " LON " lần đầu tiên xuất hiện tại Hà Nội</h3></a>
+                        <div class="time">5 ngày trước</div>
+                        <div class="mota">Trà Sữa Lon đang làm mưa làm gió Hà Thành những ngày hôm nay, là một tín đồ trà sữa rủ ngay bạn thân đi thử mới được...</div>
+                        <div class="button hvr-sweep-to-right">Xem thêm</div>
+                    </section>
+                </section>
+            </section>
+            <div class="style-list">
+                <ul class="list-ul">
+                    <li class="list1 hvr-back-pulse">1</li>
+                    <li class="list2 hvr-back-pulse">2</li>
+                    <li class="list3 hvr-back-pulse">3</li>
+                    <li class="list4 hvr-back-pulse">...</li>
+                    <li class="list10 hvr-back-pulse">10</li>
+                    <li class="list11 hvr-back-pulse">11</li>
+                    <li class="list12 hvr-back-pulse"><i class="fa fa-chevron-right" aria-hidden="true"></i></li>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="line"></div>
+        <section class="right">
+            <h1>FOLLOW US ON INSTAGRAM</h1>
+            <div class="line1"></div>
+            <section class="img">
+                <a href="https://www.instagram.com/p/CA7Rgp8l3wH/" class="hvr-float" target="_blank"><img src="./image/isg1.jpg" width="100px" height="100px" alt=""></a>
+                <a href="https://www.instagram.com/p/CA7RZiQFUGF/" class="hvr-float" target="_blank"><img src="./image/isg2.jpg" width="100px" height="100px" alt=""></a>
+                <a href="https://www.instagram.com/p/CBezEvsjh9y/" class="hvr-float" target="_blank"><img src="./image/isg3.jpg" width="100px" height="100px" alt=""></a>
+                <a href="https://www.instagram.com/p/CBXcM6Ylbky/" class="hvr-sink" target="_blank"><img src="./image/isg4.jpg" width="100px" height="100px" alt=""></a>
+                <a href="https://www.instagram.com/p/CBSJe1bFaIn/" class="hvr-sink" target="_blank"><img src="./image/isg5.jpg" width="100px" height="100px" alt=""></a>
+                <a href="https://www.instagram.com/p/CBFlGtElEQl/" class="hvr-sink" target="_blank"><img src="./image/isg6.jpg" width="100px" height="100px" alt=""></a>
+            </section>
+            
+            <h1>POPULAR TAGS</h1>
+            <div class="line2"></div>
+            <section>
+                <span class="tag hvr-back-pulse">#caphe</span>
+                <span class="tag hvr-back-pulse">#trasua</span>
+                <span class="tag hvr-back-pulse">#sinhto</span>
+                <span class="tag hvr-back-pulse">#nuochoaqua</span>
+                <span class="tag hvr-back-pulse">#monmoi</span>
+                <span class="tag hvr-back-pulse">#giamgia</span>
+            </section>
+            <h1>E-BOOK</h1>
+            <div class="line3"></div>
+            <section class="ebook">
+                <a href="https://www.thecoffeehouse.com/blogs/crop/hanh-trinh-hanh-phuc" class="hvr-shrink"  target="_blank"><img src="./image/ebook1.jpg" width="160px" height="227px" alt=""></a>
+                <a href="https://www.thecoffeehouse.com/blogs/crop/crop-3-by-the-coffee-house" class="hvr-shrink" target="_blank"><img src="./image/ebook2.webp" width="160px" height="227px" alt=""></a>
+                <a href="https://www.thecoffeehouse.com/blogs/crop/crop-2-by-the-coffee-house" class="hvr-shrink" target="_blank"><img src="./image/ebook3.webp" width="160px" height="227px" alt=""></a>
+                <a href="https://www.thecoffeehouse.com/blogs/crop/crop-1-by-the-coffee-house" class="hvr-shrink" target="_blank"><img src="./image/ebook4.webp" width="160px" height="227px" alt=""></a>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="footer1">
+                <h2>Về chúng tôi</h2>
+                <p><a href="">Về thương hiệu</a></p>
+                <p><a href="">Blog</a></p>
+                <p><a href="">Tuyển dụng</a></p>
+                <p><a href="">Cửa hàng</a></p>
+            </div>
+            <div class="footer2">
+            <div class="support">
+                <h2>CSKH</h2>
+                <p>Về khiếu nại: 1900 9681</p>
+                <p>Về dịch vụ đưa hàng: 1900 6789</p>
+            </div>
+            <div class="address">
+                <h2>Cửa hàng</h2>
+                <p>MindX Thành Công Hà Nội <br>Hà Nội, Việt Nam <br>MindX@gmail.com</p>
+            </div>
+            </div>
+            <div class="footer3">
+                <h2>Ứng dụng</h2>
+                <p><a href="https://www.apple.com/ios/app-store/" target="_blank">iOS</a></p>
+                <p><a href="https://play.google.com/store" target="_blank">Android</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./app.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  -->
+</body>
+</html>

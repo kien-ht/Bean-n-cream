@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="myHeader">
+        <div class="header">
+            <div class="dropdown">
+                <a class="dropbtn"><img src="./image/dropdown-menu-icon-288757-free-icons-library-dropdown-list-png-512_512.png" alt="" width="30px" height="auto" id="dropdownimg" onclick="myFunction()">
+                </a> 
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="#">Tin tức</a><hr>
+                  <a href="#">Thực đơn</a><hr>
+                  <a href="#">Về chúng tôi</a>
+                  </div>
+            </div>
+            <li><a href="" class="coffee-name">Beans n Cream</a></li>
+            <div class="list">
+            
+            <!-- <a href="" class="logo"><img  src="/image/98538963-cup-of-hot-coffee-icon-white-icon-on-black-background-inversion.jpg" alt="" width="40px" height="auto"></a> -->
+            <ul>
+                <li><a href="" class="underline-from-left">Về chúng tôi</a></li>
+                <li><a href="./index.html" class="animate-a">Thực đơn</a></li>
+                <li><a href="./news.html" class="animate-a">Tin tức</a></li>
+                <li><a href="" class="animate-a">Cửa hàng</a></li>
+            </ul>
+            <input type="image" id="myBtn" src="./image/shopping-cart-logo-icon-shopping-cart.png" alt="" onclick="showDataCart()">
+        </div>
+        </div>
+    </header>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="./image/img1.webp" style="width:100%">
+        </div>
+     
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./image/img2.webp" style="width:100%">
+        </div>
+     
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./image/img3.webp" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    <!-- <button id="myBtn"></button> -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="user-input">
+                <span class="close span1">&times;</span>
+            <h3>Thông tin người nhận</h3>
+            <hr>
+            <div>
+                
+                <input type="text" class="checkout-name" placeholder="Tên người nhận">
+                <input type="text" class="checkout-number" placeholder="Số điện thoại">
+            </div>
+   
+            <input type="text" class="checkout-address" placeholder="Địa chỉ giao hàng">
+            <input type="text" class="checkout-note" placeholder="Ghi chú">
+        </div>
+        <div class="shopping-cart">
+            <span class="close span2">&times;</span>
+            <h3>Giỏ hàng</h3>
+            <hr>
+            <div class="item-cart" >
+            </div>
+            <hr>
+            <div class="shipping">
+                <div id="shipping-name">Phí vận chuyển</div>
+                <div id="shipping-price">15000đ</div>
+            </div>
+            <div class="price-total">
+                <div id="price">Tổng cộng</div>
+                <div id="price-number">0</div>
+            </div>
+            <hr>
+            <div class="checkout-btn">
+            <div class="promo">
+                <input id="promo" class="button" type="text" placeholder="Nhập mã ưu đãi">
+                <button id="apply" class="button ">Áp dụng</button>
+            </div>
+            
+            <div class="checkout">
+                <button id="checkout-button" class="button">Thanh toán</button>
+            </div>
+        </div>
+        </div>
+        <div class="paying">
+            <div> <h3 id="payment-name"> Phương thức thanh toán</h3> </div>
+            <hr>
+            
+            <div class="payment">
+                <div class="payment-name1">
+                <div>
+                    <label class="cursor">
+                        <input type="radio" name="payment" id="cash-pay">
+                        <img src="./image/cash.png" alt="" width="20px" height="auto">
+                        <span id="cash">Tiền mặt</span>
+                    </label>
+                </div>
+                <div>
+                    
+                    <label class="cursor">
+                        <input type="radio" name="payment" id="atm-pay">
+                        <img src="./image/atm.png" alt="" width="20px" height="auto">
+                        <span id="bank">ATM</span>
+                    </label>
+                </div>
+                <div>
+                    <label class="cursor">
+                        <input type="radio" name="payment" id="visa-pay">
+                        <img src="./image/visa-logo-preview.png" alt="" width="20px" height="auto">
+                        <span id="visa">Visa</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="payment-name2">
+                <div>
+                    <label class="cursor">
+                        <input type="radio" name="payment" id="airpay-pay">
+                        <img src="./image/airpay.png" alt="" width="20px" height="20px">
+                        <span id="airpay">AirPay</span>
+                    </label>
+                </div>
+                <div>
+                    <label class="cursor">
+                        <input type="radio" name="payment" id="momo-pay">
+                        <img src="./image/logo-momo.png" alt="" width="20px" height="20px">
+                        <span id="momo">Ví Momo</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    
+
+      <section id="main">
+        <div class="menu-tab">
+            <a href="#NỔI BẬT" class="menu-link" onclick="addClass()">NỔI BẬT</a>
+            <a href="#CÀ PHÊ" class="menu-link">CÀ PHÊ</a>
+            <a href="#TRÀ TRÁI CÂY" class="menu-link">TRÀ TRÁI CÂY</a>
+            <a href="#SINH TỐ" class="menu-link">SINH TỐ</a>
+            <a href="#BÁNH NGỌT" class="menu-link">BÁNH NGỌT</a>
+        </div>
+        <div id="main-menu" class="main-menu">
+
+        </div>
+      </section>
+    <footer>
+        <div class="footer">
+            <div class="footer1">
+                <h2>Về chúng tôi</h2>
+                <p><a href="">Về thương hiệu</a></p>
+                <p><a href="">Blog</a></p>
+                <p><a href="">Tuyển dụng</a></p>
+                <p><a href="">Cửa hàng</a></p>
+            </div>
+            <div class="footer2">
+            <div class="support">
+                <h2>CSKH</h2>
+                <p>Về khiếu nại: 1900 9681</p>
+                <p>Về dịch vụ đưa hàng: 1900 6789</p>
+            </div>
+            <div class="address">
+                <h2>Cửa hàng</h2>
+                <p>MindX Thành Công Hà Nội <br>Hà Nội, Việt Nam <br>MindX@gmail.com</p>
+            </div>
+            </div>
+            <div class="footer3">
+                <h2>Ứng dụng</h2>
+                <p><a href="https://www.apple.com/ios/app-store/" target="_blank">iOS</a></p>
+                <p><a href="https://play.google.com/store" target="_blank">Android</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./fake_data.js"></script>
+    <script src="./app.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  -->
+</body>
+</html>
